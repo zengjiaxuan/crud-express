@@ -1,0 +1,7 @@
+{
+    "students": [
+        {"id": 1, "name": "李四", "gender": "男", "age": "23", "hobbies": "吃饭"},
+        {"id": 2, "name": "李四", "gender": "男", "age": "23", "hobbies": "吃饭"},
+        {"id": 3, "name": "李四", "gender": "男", "age": "23", "hobbies": "吃饭"}
+    ]
+}
