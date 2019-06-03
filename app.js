@@ -1,7 +1,6 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var router = require('./router')
-var fs = require('fs')
 var app = express()
 // 配置模板引擎
 app.engine('html', require('express-art-template'))

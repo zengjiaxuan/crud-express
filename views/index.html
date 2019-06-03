@@ -23,6 +23,7 @@
 				<td>性别</td>
 				<td>年龄</td>
 				<td>爱好</td>
+				<td>操作</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -33,16 +34,20 @@
 				<td>{{ $value.gender }}</td>
 				<td>{{ $value.age }}</td>
 				<td>{{ $value.hobbies}}</td>
+				<td>
+					<a href="/edit?id={{$value.id}}&name={{$value.name}}&gender={{$value.gender}}&age={{$value.age}}&hobbies={{$value.hobbies}}">编辑</a>/
+					<a href="/delete?id={{$value.id}}">删除</a>
+				</td>
 			</tr>
 			{{ /each }}
 		</tbody>
 	</table>
 	<hr>
-	<form action="/add" method="POST">
+	<form action="/" method="POST">
 		<label for="">姓名：</label>
 		<input type="text" name="name">
 		<label for="">性别</label>
-		<input type="radio" name="gender" value="男"> 男
+		<input type="radio" name="gender" checked = "checked" value="男"> 男
 		<input type="radio" name="gender" value="女"> 女
 		<label for="">年龄：</label>
 		<input type="text" name="age">

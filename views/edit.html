@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑学生</title>
+</head>
+<body>
+    <form action="/edit/post" method="POST">
+        <input type="hidden" value="{{stu.id}}" name="id">
+		<label for="">姓名：</label>
+		<input type="text" name="name" value={{stu.name}}>
+		<label for="">性别</label>
+		<input type="radio" name="gender" checked = "checked" value="男"> 男
+		<input type="radio" name="gender" value="女"> 女
+		<label for="">年龄：</label>
+		<input type="text" name="age" value={{stu.age}}>
+		<label for="">爱好：</label>
+		<input type="text" name="hobbies" value={{stu.hobbies}}>
+		<button type="submit">提交</button>
+	</form>
+</body>
+</html>
